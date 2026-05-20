@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll and ATM System</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Payroll Management System</h1>
+
+    <div class="container">
+
+        <input type="text" id="empName" placeholder="Employee Name">
+
+        <input type="text" id="empDept" placeholder="Department">
+
+        <input type="number" id="empRate" placeholder="Pay Rate">
+
+        <input type="number" id="empDays" placeholder="Days Worked">
+
+        <button onclick="addEmployee()">Add Employee</button>
+
+    </div>
+
+    <h2>Employee List</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Gross Salary</th>
+                <th>Tax</th>
+                <th>Net Salary</th>
+            </tr>
+        </thead>
+
+        <tbody id="employeeTable"></tbody>
+    </table>
+
+    <hr>
+
+    <h1>ATM Banking System</h1>
+
+    <div class="container">
+
+        <input type="number" id="amount" placeholder="Enter Amount">
+
+        <button onclick="depositMoney()">Deposit</button>
+
+        <button onclick="withdrawMoney()">Withdraw</button>
+
+        <button onclick="showBalance()">View Balance</button>
+
+    </div>
+
+    <h2 id="balance">Balance: R5000</h2>
+
+    <h2>Transactions</h2>
+
+    <ul id="transactionList"></ul>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
